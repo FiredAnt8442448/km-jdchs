@@ -48,6 +48,8 @@ body {
     cursor: pointer;
     border-radius: 5px;
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .navigation button:active {
@@ -57,7 +59,8 @@ body {
 
 .navigation button:hover {
     background-color: #d0d0d0;
-    transform: scale(1.1) perspective(1px)
+    transform: scale(1.1) perspective(1px);
+    z-index: 2;
 }
 
 .grow {
