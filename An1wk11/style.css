@@ -1,0 +1,138 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+
+    /* IMPORTANT: Adjust flex-direction if needed.
+       - Use 'flex-direction: row;' to align iframes horizontally
+       - Use 'flex-direction: column;' to align vertically
+    */
+}
+
+.container iframe:nth-child(1) {
+    width: 15vw;
+}
+
+.container iframe:nth-child(2) {
+    width: 85vw;
+}
+
+.content {
+    width: 80%;
+    padding: 20px;
+    background-color: #FADDAD;
+    /* Adjust height properties as needed for your layout  */
+}
+
+/* Styling for navigation */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    background-color: #C8D5B3;
+    padding: 20px;
+    box-sizing: content-box;
+}
+
+.navigation button {
+    background-color: #FEF9E3;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.navigation button:active {
+    transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+}
+
+.navigation button:hover {
+    background-color: #d0d0d0;
+    transform: scale(1.1) perspective(1px)
+}
+
+.grow {
+    background-color: #d7d7d7;
+    box-shadow: 3px 5px 5px #888888;
+    border-radius: 2px;
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+/* Styling for content  */
+.content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center; /* Centers the <h1> heading */
+}
+
+.content p {
+    line-height: 1.5;
+}
+
+iframe {
+    border: none;
+}
+
+.main-image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-image-grid img {
+    display: block;
+    width: 100%;           /* Images take up 100% of the column width */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;  /* Adjust spacing between images */
+}
+
+.sub-image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sub-image-grid img {
+    display: block;
+    width: 100%;           /* Images take up 100% of the column width */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;  /* Adjust spacing between images */
+}
+
+.sub-image-grid figure {
+    margin: 0; /* Reset the margin */
+}
+
+@media screen and (max-width: 50em) {
+    .main-image-grid {
+        grid-template-columns: 1fr;
+    }
+    .sub-image-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+figure img {
+    width: 300px;
+    height: 200px;
+}
+
+figure figcaption {
+    text-align: justify;
+}
