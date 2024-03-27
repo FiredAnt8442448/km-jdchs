@@ -115,7 +115,7 @@ iframe {
     width: 100%;           /* Images take up 100% of the column width */
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5px;  /* Adjust spacing between images */
+    margin-bottom: 20px;  /* Adjust spacing between images */
 }
 
 .sub-image-grid figure {
