@@ -10,24 +10,33 @@ h1 {
     left: 0;
     width: 100%;
     background-color: lightblue;
+    z-index: 2;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
+    z-index: 1;
+}
+
+.dropdown-container {
+    position: relative;
+    z-index: 1; /* This positions the dropdown container below the navbar */
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    right: 0;
+    top: 35px;
+    background-color: red;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
 }
 
 .dropdown-content.show {
     display: block;
+    animation: slide-down 0.5s forwards;
 }
 
 .dropdown-content a {
@@ -37,11 +46,37 @@ h1 {
     display: block;
 }
 
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
 
 .dropbtn {
     background-color: lightblue;
-    color: white;
-    padding: 16px;
+    color: black;
+    padding: 6px;
     font-size: 16px;
     border: none;
+}
+
+.dropbtn:hover {
+    color: green;
+}
+
+.hamburger-icon {
+    font-size: 24px; /* Increase this value to make the hamburger icon bigger */
+    padding: 16px; /* Move the padding from .dropbtn to here */
 }

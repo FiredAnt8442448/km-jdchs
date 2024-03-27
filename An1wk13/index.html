@@ -5,18 +5,20 @@
   <title>Title</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="navigation">
-  <div class="dropdown">
-    <button id="dropbtn" class="dropbtn">Dropdown</button>
-    <div id="dropdown-content" class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+  <body>
+    <div class="navigation">
+      <div class="dropdown">
+        <button id="dropbtn" class="dropbtn"><span class="hamburger-icon">&#9776;</span></button>
+      </div>
     </div>
-  </div>
-</div>
-<iframe src="directory.html" style="width:100%; height:calc(100vh - 80px); border:none; margin-top:60px;"></iframe>
-<script src="indexscript.js"></script>
-</body>
+    <div class="dropdown-container">
+      <div id="dropdown-content" class="dropdown-content">
+        <a href="directory.html">Directory</a>
+        <a href="map.html">Map</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+    <iframe src="directory.html" style="width:100%; height:calc(100vh - 80px); border:none; margin-top:60px;"></iframe>
+    <script src="indexscript.js"></script>
+  </body>
 </html>
