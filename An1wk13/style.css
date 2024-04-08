@@ -74,6 +74,7 @@ h1 {
 
 .dropbtn:hover {
     color: green;
+    cursor: pointer;
 }
 
 .hamburger-icon {
