@@ -81,3 +81,48 @@ h1 {
     font-size: 24px; /* Increase this value to make the hamburger icon bigger */
     padding: 16px; /* Move the padding from .dropbtn to here */
 }
+
+#map { height: 100vh; }
+
+#mapImage {
+    width: 100%;
+    height: auto;
+    max-height: 100vh; /* This will prevent the image from becoming taller than the viewport */
+}
+
+.load-data-button {
+    /* Other styles... */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYSeYAdc5c_DoErgYgDLOJs8nCpX1y5Zc4FwVx0mY-Eg&s');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+}
+
+.save-data-button {
+    /* Other styles... */
+    background-image: url('https://cdn-icons-png.flaticon.com/512/2344/2344313.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+}
+
+.clear-data-button {
+    /* Other styles... */
+    background-image: url('https://cdn-icons-png.freepik.com/256/484/484611.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+}
+
+.data-div {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001; /* This should be higher than the z-index of #map */
+}
+
+.right-align-button {
+    float: right;
+}
